@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "NYT & WSJ Redirector",
+  "version": "1.0",
+  "description": "Redirect requests to New York Times and Wall Street Journal to Archive.ph",
+  "icons": {
+    "48": "icon.png"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.nytimes.com/*",
+    "*://*.wsj.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true 
+  }
+}
+
